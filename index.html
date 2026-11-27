@@ -5,7 +5,7 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at top,#35234b,#110f1c 75%);color:#eee5f6;font:16px/1.6 system-ui,-apple-system,sans-serif;min-height:100vh}main{max-width:680px;margin:auto;padding:28px 18px 60px}header{text-align:center;color:#c5b5d7}h1{font:46px Georgia,serif;margin:5px 0}header p{margin:0}svg{display:block;margin:auto}section{background:#211b30;border:1px solid #51405f;border-radius:22px;padding:clamp(18px,4vw,30px);margin:26px 0 18px}h2{font-size:24px;line-height:1.32;margin:14px 0 20px}button,input,textarea{font:inherit}button{cursor:pointer;color:#f6ecff;border:1px solid #715b87;background:#3e3153;border-radius:12px;padding:12px 18px}button.primary{color:#251430;background:#cfb1f1;font-weight:700}button:disabled{opacity:.5;cursor:default}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #cba9f2;outline-offset:2px}.option{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border:1px solid #544264;border-radius:12px;margin:9px 0;cursor:pointer}.option:has(input:checked){background:#53416b;border-color:#d4b3fb}.option input{accent-color:#cbb0eb;margin-top:5px}.option span{flex:1}textarea,input[type=text]{width:100%;background:#15121f;border:1px solid #67547c;color:white;border-radius:12px;padding:13px;min-height:48px}textarea{min-height:120px;resize:vertical}nav{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}nav button{flex:1 1 auto}progress{height:8px;width:100%;accent-color:#cbb0ed}.muted{color:#c3b6d3;font-size:13px}.hint{color:#c6bad4}p{line-height:1.65}small{color:#c9b8df}.pill{display:inline-block;border:1px solid #68527e;border-radius:999px;padding:3px 10px;margin:0 0 12px}.section-note{margin:8px 0 20px;color:#c4b7d2}.privacy{font-size:13px;color:#b6a9c8;line-height:1.6}@media (max-width:420px){h1{font-size:40px}nav button{flex:1 1 42%}}@media print{body{background:white;color:black}section{background:white;color:black;border-color:#bbb}header,nav{display:none}}
 </style></head>
-<body><main><header><svg aria-hidden="true" width="170" height="88" viewBox="0 0 170 88"><g fill="none" stroke-width="1.4"><circle cx="65" cy="44" r="38" stroke="#c7a9ed"/><circle cx="105" cy="44" r="38" stroke="#efc9a8"/><ellipse cx="85" cy="44" rx="75" ry="19" transform="rotate(-20 85 44)" stroke="#a99bc0"/></g><circle cx="85" cy="44" r="3" fill="white"/></svg><h1>Две души</h1><p>Два жизненных пути · исследование связи</p></header><section id="app" aria-live="polite"></section><p class="privacy">Ответы сохраняются только в браузере этого устройства, если доступно локальное хранилище. Экспортированный JSON не зашифрован. Не публикуйте его и передавайте только с согласия участника. Эта анкета не является психологической диагностикой или доказательством духовного родства.</p></main>
+<body><main><header><svg aria-hidden="true" width="170" height="88" viewBox="0 0 170 88"><g fill="none" stroke-width="1.4"><circle cx="65" cy="44" r="38" stroke="#c7a9ed"/><circle cx="105" cy="44" r="38" stroke="#efc9a8"/><ellipse cx="85" cy="44" rx="75" ry="19" transform="rotate(-20 85 44)" stroke="#a99bc0"/></g><circle cx="85" cy="44" r="3" fill="white"/></svg><h1>Две души</h1><p>Два жизненных пути · исследование связи</p></header><nav><a href="world.html" style="color:#dbc3ff">Карта связи и совместные занятия</a></nav><section id="app" aria-live="polite"></section><p class="privacy">Ответы сохраняются только в браузере этого устройства, если доступно локальное хранилище. Экспортированный JSON не зашифрован. Не публикуйте его и передавайте только с согласия участника. Эта анкета не является психологической диагностикой или доказательством духовного родства.</p></main>
 <script>
 "use strict";
 const blocks=[
@@ -16,7 +16,7 @@ const blocks=[
 ["y","Менялось ли твоё представление о семье с возрастом?"],
 ["o","Какие детские события, мечты или воспоминания особенно повлияли на тебя?"]]],
 ["Жизненный путь",[
-["o","Опиши до пяти ключевых событий до знакомства: год или возраст, обстоятельства, последствия."],
+["m","Какие события до знакомства заметно изменили твою жизнь?","Переезд|Смена профессии или учёбы|Начало или завершение отношений|Потеря близкого|Путешествие|Новое увлечение|Изменение убеждений"],
 ["y","Были ли периоды, когда ты полностью менял(а) направление жизни?"],
 ["m","Что чаще всего становилось причиной перемен?","Собственный выбор|Работа или учёба|Отношения|Потеря|Переезд|Случайные обстоятельства"],
 ["y","Возвращался ли ты к одним и тем же жизненным сценариям?"],
@@ -32,7 +32,7 @@ const blocks=[
 ["y","Легко ли тебе просить о помощи?"],
 ["s","Насколько комфортно тебе показывать уязвимость близкому человеку?"],
 ["y","Бывает ли, что ты скрываешь чувства ради сохранения отношений?"],
-["o","Какие страхи или болезненные переживания повлияли на тебя? Раскрывай только то, что безопасно."]]],
+["m","Какие переживания тебе знакомы? Отмечай только то, чем готов(а) поделиться.","Страх одиночества|Страх потерять близкого|Страх быть непонятым|Переживание предательства|Неуверенность в себе|Страх потерять свободу"]]],
 ["Ценности и предназначение",[
 ["m","Какие ценности наиболее важны для тебя?","Свобода|Семья|Познание|Творчество|Стабильность|Справедливость|Служение другим"],
 ["y","Есть ли у тебя ощущение жизненного предназначения?"],
@@ -52,9 +52,9 @@ const blocks=[
 ["y","Можешь ли ты свободно отказать партнёру, не опасаясь последствий?"],
 ["o","Какие потребности, предпочтения и границы в эмоциональной и сексуальной близости тебе важно обозначить?"]]],
 ["Совпадения и синхроничности",[
-["y","Замечал(а) ли ты значимые совпадения ещё до знакомства?"],
+["m","После знакомства выяснилось ли, что ваши жизни раньше пересекались?","Бывали в одном месте|Имели общих знакомых|Жили поблизости|Посещали одинаковые мероприятия|Не знаю"],
 ["y","Были ли совпадения между вами, о которых ты узнал(а) только после знакомства?"],
-["o","Опиши наиболее конкретные совпадения: даты, обстоятельства, когда узнал(а), степень уверенности и возможные обычные объяснения."],
+["m","Какие совпадения между вами особенно запомнились?","Любимые занятия|Привычки|События жизни|Места|Даты|Мысли или фразы|Сновидения"],
 ["y","Помнишь ли ты случаи, когда ожидаемое совпадение не подтвердилось?"]]],
 ["Встреча и связь",[
 ["m","Что ты чувствовал(а) при знакомстве?","Интерес|Спокойствие|Влечение|Узнавание|Тревогу|Безразличие|Неуверенность"],
@@ -63,10 +63,10 @@ const blocks=[
 ["y","Можешь ли ты сохранять собственные интересы и мнение в этих отношениях?"]]],
 ["Будущее",[
 ["o","Каким ты представляешь своё будущее независимо от отношений и вместе с партнёром?"],
-["o","Какие различия, границы или возможные конфликты важно обсудить, даже если связь кажется необычной?"]]]
+["m","О чём тебе хотелось бы договориться заранее?","Личное пространство|Деньги|Общение с друзьями|Совместный отдых|Быт|Планы на будущее|Способы решать споры"]]]
 ];
 const qs=blocks.flatMap(([section,items])=>items.map(([type,question,options])=>({section,type,question,options:options?options.split("|"):[]})));
-const key="two-souls-v1";let st={name:"",i:-1,a:{}};
+const key="two-souls-v2";let st={name:"",i:-1,a:{}};
 try{const loaded=JSON.parse(localStorage.getItem(key));if(loaded&&Number.isInteger(loaded.i)&&loaded.a&&typeof loaded.a==="object")st=loaded;}catch{}
 const app=document.getElementById("app");
 function save(){try{localStorage.setItem(key,JSON.stringify(st));}catch{}}
@@ -74,10 +74,10 @@ function element(tag,text,cls){const node=document.createElement(tag);if(text!==
 function add(tag,text,cls){const node=element(tag,text,cls);app.append(node);return node;}
 function button(parent,text,click,cls){const node=element("button",text,cls);node.type="button";node.addEventListener("click",click);parent.append(node);return node;}
 function go(i){st.i=i;save();render();window.scrollTo(0,0);}
-function exportData(){const data={version:1,participant:st.name,exportedAt:new Date().toISOString(),answers:qs.map((q,i)=>({id:i+1,section:q.section,question:q.question,...(st.a[i]||{})}))};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const anchor=element("a");anchor.href=url;anchor.download="two-souls-answers.json";document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function exportData(){const data={version:2,study:"baseline",participant:st.name,exportedAt:new Date().toISOString(),answers:qs.map((q,i)=>({id:i+1,section:q.section,question:q.question,...(st.a[i]||{})}))};const blob=new Blob([JSON.stringify(data,null,2)],{type:"application/json"});const url=URL.createObjectURL(blob);const anchor=element("a");anchor.href=url;anchor.download="two-souls-answers.json";document.body.append(anchor);anchor.click();anchor.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);}
 function render(){app.replaceChildren();
-if(st.i<0){add("h2","Начало путешествия");add("p","45 вопросов. Заполняй самостоятельно, не сверяясь с ответами другого участника. Любой вопрос можно пропустить. Отвечай исходя из собственного опыта, а не ожидаемых совпадений.");const name=add("input");name.type="text";name.placeholder="Имя или псевдоним (необязательно)";name.value=st.name;name.addEventListener("input",()=>{st.name=name.value;save();});const nav=add("nav");button(nav,"Начать",()=>go(0),"primary");return;}
-if(st.i>=qs.length){add("h2","Анкета завершена");const answered=Object.values(st.a).filter(x=>!x.skip&&(x.value!==undefined||x.note?.trim())).length;add("p","Отвечено: "+answered+" из "+qs.length+". Сохрани файл, а затем передай его только по собственному желанию.");const nav=add("nav");button(nav,"Скачать ответы JSON",exportData,"primary");button(nav,"Вернуться к вопросам",()=>go(qs.length-1));button(nav,"Удалить локальные ответы",()=>{if(confirm("Удалить все ответы из этого браузера?")){st={name:"",i:-1,a:{}};save();render();}});return;}
+if(st.i<0){add("h2","Начало путешествия");add("p","45 вопросов. Заполняй самостоятельно, не сверяясь с ответами другого участника. Любой вопрос можно пропустить. Отвечай исходя из собственного опыта, а не ожидаемых совпадений.");const name=add("input");name.type="text";name.placeholder="Имя или псевдоним (необязательно)";name.value=st.name;name.addEventListener("input",()=>{st.name=name.value;save();});const nav=add("nav");button(nav,"Начать",()=>go(0),"primary");button(nav,"Карта и приключения",()=>location.href="world.html");return;}
+if(st.i>=qs.length){add("h2","Анкета завершена");const answered=Object.values(st.a).filter(x=>!x.skip&&(x.value!==undefined||x.note?.trim())).length;add("p","Отвечено: "+answered+" из "+qs.length+". Сохрани файл, а затем передай его только по собственному желанию.");const nav=add("nav");button(nav,"Скачать ответы JSON",exportData,"primary");button(nav,"Карта и приключения",()=>location.href="world.html");button(nav,"Вернуться к вопросам",()=>go(qs.length-1));button(nav,"Удалить локальные ответы",()=>{if(confirm("Удалить все ответы из этого браузера?")){st={name:"",i:-1,a:{}};save();render();}});return;}
 const i=st.i,q=qs[i];let a=st.a[i]||{};add("small",q.section+" · "+(i+1)+" / "+qs.length,"pill");const prog=add("progress");prog.max=qs.length;prog.value=i+1;add("h2",q.question);
 function update(k,v){a={...a,[k]:v,skip:false};st.a[i]=a;save();}
 if(q.type==="y"||q.type==="m"){const options=q.type==="y"?["Да","Нет","Иногда / зависит от ситуации","Затрудняюсь ответить","Свой вариант"]:[...q.options,"Ничего из перечисленного","Свой вариант"];options.forEach(opt=>{const label=add("label",null,"option");const inp=element("input");inp.type=q.type==="y"?"radio":"checkbox";inp.name="answer";inp.checked=q.type==="y"?a.value===opt:Array.isArray(a.value)&&a.value.includes(opt);inp.addEventListener("change",()=>{if(q.type==="y"){update("value",opt);}else{let values=Array.isArray(a.value)?a.value.slice():[];values=inp.checked?[...values,opt]:values.filter(x=>x!==opt);if(inp.checked&&opt==="Ничего из перечисленного")values=[opt];else if(inp.checked)values=values.filter(x=>x!=="Ничего из перечисленного");update("value",values);render();}});label.append(inp,element("span",opt));});}
